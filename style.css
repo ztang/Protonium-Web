@@ -1,0 +1,156 @@
+#header {
+	top: 0px;
+	position: fixed;
+	display: block;
+	width: 100%;
+	z-index: 9;
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+
+@media (max-width: 959px) {
+	.pair {
+		margin-top: 20%;
+	}
+
+	.mimd {
+		height: 12%;
+	}
+
+	.description {
+		font-size: 4vw;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.rightpart {
+		margin: 1%
+	}
+
+	.leftdescription {
+		font-size: 3.2vw;
+		line-height: 70%;
+	}
+
+	.leftimprove {
+		font-size: 5vw;
+	}
+
+	.leftpercent {
+		font-size: 3vw;
+	}
+
+	.rightdescription {
+		font-size: 3vw
+	}
+
+	.lefttitle {
+		font-size: 4.7vw
+	}
+
+	.kklogo {
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.largemoniter {
+		display: none;
+	}
+
+	p {
+		line-height: 100%;
+	}
+
+	#header, #footer {
+		position: fixed;
+		display: block;
+		width: 100%;
+		z-index: 9;
+		text-align: center;
+		padding: 0 0 0 0;
+	}
+
+	#footer {
+		bottom: 2%;
+	}
+
+	.logo {
+		background: #ffffff;
+		height: 6%;
+	}
+
+    .index-image {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 959px) {
+
+	.pair {
+		margin-top: 10%;
+	}
+
+	.mimd {
+		height: 25%;
+	}
+
+	.description {
+		font-size: 2vw;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.rightpart {
+		margin-top: 40%;
+		margin-bottom: 10%;
+	}
+
+	.leftdescription {
+		font-size: 1.3vw;
+	}
+
+	.leftimprove {
+		font-size: 3.5vw;
+	}
+
+	.leftpercent {
+		font-size: 2vw;
+	}
+
+	.rightdescription {
+		font-size: 2vw;
+	}
+
+	.lefttitle {
+		font-size: 2vw;
+	}
+
+	.kklogo {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	.smallmoniter {
+		display: none;
+	}
+
+	.logo {
+		background: #ffffff;
+		height: 6%;
+	}
+
+    /*  V1.1 added */
+    .index-image {
+        padding: 30px;
+		max-height: 700px;
+    }
+}

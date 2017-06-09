@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!---
+Author: Jiong Lou
+Modifed by: Zhiqing Tang
+Changelog:
+    V1.1 - 2017-05-24
+        - format the code style.
+        - seperate style.css
+        - change background color
+        - add spec
+    V1.0 -
+        - Website online
+--->
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Protonium - Professional 3D Printer Redefined
+        </title>
+        <!-- Bootstrap -->
+        <!--<link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />-->
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="http://cdn.staticlibs.com/protonium3d.com/css/style.css" type="text/css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+             fbq('init', '123841791518956');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+         <img height="1" width="1"
+        src="https://www.facebook.com/tr?id=123841791518956&ev=PageView
+        &noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
+
+    <body style="background:#ffffff">
+        <!--<div class="container-fluid" style="background:#000000;height:6%;margin-top:1%">
+          <img  id="logo" style="height:100%;display:none;" align="left" src="pic_source/logo.png">
+        </div>-->
+        <div id="header" class="container-fluid logo">
+            <div class="row" style=" margin-top:1%">
+                <div class="col-md-3 col-xs-7">
+                    <img id="logo" style="width:100%;display:none; padding-left:30px; padding-top:10px" align="left" src="http://cdn.staticlibs.com/protonium3d.com/pic_source/logo.png">
+                </div>
+                <div class="col-md-3 col-md-offset-5 col-xs-0 largemoniter">
+                    <button type="button" id="bannerbutton" href="#modal-container-351854" data-toggle="modal" class="btn btn-success center-block btn-lg largemoniter" style="display:none;margin-top:3%;margin-left: auto;margin-right: auto"><font color="white">Get 40% off</font></button>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container-fluid smallmoniter">
+            <div class="row center-block rightpart" id="mobileinfo">
+                <div style="text-align: center">
+                    <font class="rightdescription" color="grey">Coming soon on</font>
+                </div>
+                <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/kickstarter-logo-light.png" class="img-responsive kklogo">
+                <div class="largemoniter">
+                    <div style="text-align: center">
+                        <font class="rightdescription" color="grey">Sign up to get</font>
+                    </div>
+                    <div style="text-align: center">
+                        <font class="rightdescription" color="grey">limited discount</font>
+                    </div>
+                </div>
+                <div class="smallmoniter">
+                    <div style="text-align: center">
+                        <font class="rightdescription" color="grey">Sign up to get a limited discount</font>
+                    </div>
+                </div>
+                <button type="button" id="modal-351854" href="#modal-container-351854" data-toggle="modal" class="btn btn-success center-block btn-lg largemoniter" style="margin-top:3%;margin-left: auto;margin-right: auto"><font color="white">Get 40% off</font></button>
+            </div>
+            <button type="button" id="modal-351854" href="#modal-container-351854" data-toggle="modal" class="btn btn-success center-block btn-lg" style="margin-left: auto;margin-right: auto"><font color="white">Get 40% off</font></button>
+        </div>
+        <div id="fullpage">
+            <div class="section">
+                <div class="container clearfix"></div>
+                <div class="container-fluid" style="margin-top:6%;height:80%;display:table;">
+                    <div class="row" style="display: table-cell;vertical-align: middle;">
+                        <div class="col-md-3 col-md-offset-1 col-xs-5" style="margin-top:2%;">
+                            <div id="left" style="display:none">
+                                <div>
+                                    <font color="grey" class="lefttitle"><b>Professional 3D Printer Redefined</b></font>
+                                </div>
+                                <p>
+                                    <font class="leftdescription" color="grey">Compared to conventiional 3D printers Protonium can print with up to</font>
+                                </p>
+                                <div class="pair">
+                                    <p style="line-height:20%">
+                                        <font color="#46A3FF" class="leftimprove">2.4</font><font color="#46A3FF" class="leftpercent">X</font>
+                                    </p>
+                                    <p>
+                                        <font class="leftdescription" color="grey">higher efficiency</font>
+                                    </p>
+                                </div>
+                                <div class="pair">
+                                    <p style="line-height:20%">
+                                        <font color="#46A3FF" class="leftimprove">3.6</font><font color="#46A3FF" class="leftpercent">X</font>
+                                    </p>
+                                    <p>
+                                        <font class="leftdescription" color="grey">higher strength</font>
+                                    </p>
+                                </div>
+                                <div class="pair">
+                                    <p style="line-height:20%">
+                                        <font color="#46A3FF" class="leftimprove">2.5</font><font color="#46A3FF" class="leftpercent">X</font>
+                                    </p>
+                                    <p>
+                                        <font class="leftdescription" color="grey">better isotropy</font>
+                                    </p>
+                                </div>
+                                <div class="pair">
+                                    <p style="line-height:20%">
+                                        <font color="#46A3FF" class="leftimprove">1.6</font><font color="#46A3FF" class="leftpercent">X</font>
+                                    </p>
+                                    <p>
+                                        <font class="leftdescription" color="grey">higher resolution</font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/0GIF-2.gif" style="max-width:90%;margin-left: auto; margin-right: auto;" class="img-responsive index-image">
+                            <button type="button" id="modal-10010" href="#modal-container-10010" data-toggle="modal" class="btn btn-default center-block btn-lg" ><font color="grey">Specification</font></button>
+                        </div>
+                        <div class="col-md-3 largemoniter">
+                            <div class="row center-block rightpart" id="right" style="display:none;">
+                                <div style="text-align: center">
+                                    <font class="rightdescription" color="grey">Coming soon on</font>
+                                </div>
+                                <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/kickstarter-logo-light.png" class="img-responsive kklogo">
+                                <div class="largemoniter">
+                                    <div style="text-align: center">
+                                        <font class="rightdescription" color="grey">Sign up to get</font>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <font class="rightdescription" color="grey">limited discount</font>
+                                    </div>
+                                </div>
+                                <div class="smallmoniter">
+                                    <div style="text-align: center">
+                                        <font class="rightdescription" color="grey">Sign up to get limited discount</font>
+                                    </div>
+                                </div>
+                                <button type="button" id="modal-351854" href="#modal-container-351854" data-toggle="modal" class="btn btn-success center-block btn-lg largemoniter" style="margin-top:3%;margin-left: auto;margin-right: auto"><font color="white">Get 40% off</font></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div style="text-align:center;">
+                            <span id="arrowDown" class="glyphicon glyphicon-menu-down center-block largemoniter" style="color:#fff;margin-left: auto;margin-right: auto;font-size:4vw"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container clearfix mimd"></div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-xs-12">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/1.gif" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 col-middle col-xs-12">
+                            <div class="description">
+                                <font color="grey">Protonium can print with extremely high strength, even enough for a fully functional tow ring.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container clearfix mimd"></div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 largemoniter">
+                            <div class="description">
+                                <font color="grey">Printed as tough as injection molding by Protonium, your prototype can be tested in studio. Protonium increases the iteration efficiency by cutting off prototyping time and brings you better design. You can even print final products for clients, saving plenty of time and money.</font>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/2hu.gif" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 col-xs-12 smallmoniter">
+                            <div class="description">
+                                <font color="grey">Printed as tough as injection molding by Protonium, your prototype can be tested in studio. Protonium increases the iteration efficiency by cutting off prototyping time and brings you better design. You can even print final products for clients, saving plenty of time and money.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container clearfix mimd"></div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-xs-12">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/3.gif" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 col-middle col-xs-12">
+                            <div class="description">
+                                <font color="grey">Protonium can even print delicate ripple pattern on the surface of a knife, while keeping the high strength. It guarantees you endless design freedom.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container clearfix mimd"></div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 largemoniter">
+                            <div class="description">
+                                <font color="grey">Protonium can also print tiny parts such as gears with a module of 0.5, which enables engineers to create functional prototypes without manufacturing externally, which boosts your R&amp;D process and company profits.</font>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/4.gif" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 col-xs-12 smallmoniter">
+                            <div class="description">
+                                <font color="grey">Protonium can also print tiny parts such as gears with a module of 0.5, which enables engineers to create functional prototypes without manufacturing externally, which boosts your R&amp;D process and company profits.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container clearfix mimd"></div>
+                <div class="container-fluid" style="height:100%">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-xs-12">
+                            <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/5.gif" style="width:100%;">
+                        </div>
+                        <div class="col-md-6 col-middle col-xs-12">
+                            <div class="description">
+                                <font color="grey">By using Protonium with high print speed, strength and precision, prototypes can be created through the whole design process from concept to final design, enduring various tests. It was never so quick and easy to bring new ideas to market.</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid smallmonitor" style="background:#000000;">
+                <div class="row">
+                    <button type="button" id="modal-351854" href="#modal-container-351854" data-toggle="modal" class="btn btn-success center-block btn-lg smallmonitor" style="margin-top:3%;margin-left: auto;margin-right: auto"><font color="white">Get 40% off</font></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-container-351854" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div style="text-align:center;">
+                            <div>
+                                <font style="font-size:20px">We are coming soon on Kickstarter.</font>
+                            </div>
+                            <div>
+                                <font style="font-size:20px">Sign up now for limited discounts</font>
+                            </div>
+                            <div>
+                                <font style="font-size:20px">just for super early birds!</font>
+                            </div>
+                            <div>
+                                <font style="font-size:20px">pledge from</font>
+                            </div>
+                            <div>
+                                <font style="font-size:30px"><b>$1,XXX</b></font>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label> <input class="form-control" id="nameinput">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label> <input type="email" class="form-control" id="emailinput">
+                        </div>
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div><button type="button" class="btn btn-success" data-dismiss="modal" onclick="submit()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- here begins the specification area --->
+        <div class="modal fade" id="modal-container-10010" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="http://cdn.staticlibs.com/protonium3d.com/pic_source/specification.png" class="img-reponsive" style="max-width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+        <script src="fullPage.js-master/vendors/jquery.easings.min.js" type="text/javascript"></script>
+        <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+        <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
+
+        <!---  Google Analytics Code here  =-->
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-99368874-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!---  End Googgle Analytics Code  =-->
+
+        <script type="text/javascript">
+            function submit() {
+                if ($('#nameinput').val() != "" && $('#emailinput').val() != "") {
+                    var current_url = top.location.href;
+                    console.log(current_url);
+                    $.ajax({
+                        "url": "save_test.php",
+                        "data": { 'nameinput': $('#nameinput').val(), 'emailinput': $('#emailinput').val(), 'current_url': current_url },
+                        "type": "post",
+                        "error": function () {
+                            alert("Error");
+                        },
+                        "success": function (response) {
+                            alert(response);
+                            //alert(current_url);
+                            fbq('track', 'CompleteRegistration');
+                        }
+                    });
+                } else {
+                    alert("Please don't submit empty information");
+                }
+            };
+        </script><script type="text/javascript">
+        //   $(document).ready(function() {
+        //  $('#fullpage').fullpage({
+        //      //Navigation
+        //      menu: '#menu',
+        //      lockAnchors: false,
+        //      anchors:['firstPage', 'secondPage'],
+        //      navigation: false,
+        //      navigationPosition: 'right',
+        //      navigationTooltips: ['firstSlide', 'secondSlide'],
+        //      showActiveTooltip: false,
+        //      slidesNavigation: false,
+        //      slidesNavPosition: 'bottom',
+
+        //      //Scrolling
+        //      css3: true,
+        //      scrollingSpeed: 700,
+        //      autoScrolling: true,
+        //      fitToSection: true,
+        //      fitToSectionDelay: 1000,
+        //      scrollBar: false,
+        //      easing: 'easeInOutCubic',
+        //      easingcss3: 'ease',
+        //      loopBottom: false,
+        //      loopTop: false,
+        //      loopHorizontal: true,
+        //      continuousVertical: false,
+        //      continuousHorizontal: false,
+        //      scrollHorizontally: false,
+        //      interlockedSlides: false,
+        //      dragAndMove: false,
+        //      offsetSections: false,
+        //      resetSliders: false,
+        //      fadingEffect: false,
+        //      normalScrollElements: '#element1, .element2',
+        //      scrollOverflow: false,
+        //      scrollOverflowReset: false,
+        //      scrollOverflowOptions: null,
+        //      touchSensitivity: 15,
+        //      normalScrollElementTouchThreshold: 5,
+        //      bigSectionsDestination: null,
+
+        //      //Accessibility
+        //      keyboardScrolling: true,
+        //      animateAnchor: true,
+        //      recordHistory: true,
+
+        //      //Design
+        //      controlArrows: true,
+        //      verticalCentered: true,
+        //      sectionsColor : ['#ccc', '#fff'],
+        //      paddingTop: '3em',
+        //      paddingBottom: '10px',
+        //      fixedElements: '#header, .footer',
+        //      responsiveWidth: 0,
+        //      responsiveHeight: 0,
+        //      responsiveSlides: false,
+        //      parallax: false,
+        //      parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+        //      //Custom selectors
+        //      sectionSelector: '.section',
+        //      slideSelector: '.slide',
+
+        //      lazyLoading: true,
+
+        //      //events
+        //      onLeave: function(index, nextIndex, direction){},
+        //      afterLoad: function(anchorLink, index){},
+        //      afterRender: function(){},
+        //      afterResize: function(){},
+        //      afterResponsive: function(isResponsive){},
+        //      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        //      onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        //  });
+        // });
+        $('#arrowDown').click(function(){
+            $.fn.fullpage.moveSectionDown();
+        });
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                fixedElements: '#header, .footer',
+                css3: true,
+                afterLoad: function(anchorLink, index){
+                    console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+                    if(index!=1){
+                        $("#bannerbutton").show();
+                    }
+                    if(index==1){
+                        $("#bannerbutton").hide();
+                        $('#mobileinfo').show();
+                    }
+                },
+                onLeave: function(index, nextIndex, direction){
+                    console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+                    if(nextIndex==1){
+                        $("#bannerbutton").hide();
+                    }
+                    if(nextIndex!=1){
+                        $('#mobileinfo').hide();
+                    }
+                },
+            });
+        });
+        $(document).ready(function () {
+            setTimeout(
+                function () {
+                    $("#logo").show();
+                    console.log("logo");
+                }, 0000
+            );
+            setTimeout(
+                function () {
+                    $("#left").fadeIn("fast");
+                    console.log("left");
+                }, 0000
+            );
+            setTimeout(
+                function () {
+                    $("#right").show();
+                    console.log("left");
+                }, 0000
+            );
+        });
+        </script>
+    </body>
+</html>
