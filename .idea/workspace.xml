@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe8f37b-cc7d-414f-8940-989510f61c8d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/save_test.php" afterPath="$PROJECT_DIR$/save_test2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index_new.html" afterPath="$PROJECT_DIR$/index_new.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="index_new.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index_new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="24" column="92" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="92" />
+            <state relative-caret-position="616">
+              <caret line="346" column="59" lean-forward="false" selection-start-line="346" selection-start-column="59" selection-end-line="346" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/save_test.php" />
         <option value="$PROJECT_DIR$/index20170611.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index_new.html" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index_new.html" />
       </list>
     </option>
   </component>
@@ -610,12 +607,12 @@
       <workItem from="1497017347534" duration="1226000" />
       <workItem from="1497019278036" duration="333000" />
       <workItem from="1497019634310" duration="623000" />
-      <workItem from="1497180706916" duration="8004000" />
+      <workItem from="1497180706916" duration="8327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10190000" />
+    <option name="totallyTimeSpent" value="10513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1017,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index_new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="24" column="92" lean-forward="false" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="92" />
+        <state relative-caret-position="616">
+          <caret line="346" column="59" lean-forward="false" selection-start-line="346" selection-start-column="59" selection-end-line="346" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
