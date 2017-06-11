@@ -153,4 +153,8 @@
         padding: 30px;
 		max-height: 700px;
     }
+
+	.select-industry {
+		padding-left: 30px;
+	}
 }
